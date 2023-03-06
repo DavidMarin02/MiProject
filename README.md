@@ -1,2 +1,3 @@
 # MiProject
-lets me create a project in GitHub
+
+Proyecto que se creo con la finalidad de aprender Desarrollo Web
