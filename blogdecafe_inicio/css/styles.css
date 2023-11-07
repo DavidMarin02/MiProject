@@ -254,10 +254,10 @@ img {
 }
 
 
-/** contacto**/
+/** reserva**/
 
 .contacto-bg {
-    background-image: url(../img/contacto.jpg);
+    background-image: url(../img/reserva.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
@@ -289,3 +289,29 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+
+/* Estilo para la ventana de confirmación */
+.confirmacion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  /* Estilo para el fondo oscurecido */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+  }
+  
