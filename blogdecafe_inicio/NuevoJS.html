@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript y Ajax</title>
+</head>
+<body>
+
+    <header>
+        <h1>Actividades JavaScript y Ajax</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#ajax">Ajax</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Contenido de JavaScript -->
+        <section id="javascript">
+            <h2>JavaScript</h2>
+            <ol>
+                <li>
+                    <h3>1. Detectar si la cadena de entrada es un palíndromo.</h3>
+                    <p id="palindrome-result"></p>
+                    <script src="js/palindrome.js"></script>
+                </li>
+                <li>
+                    <h3>2. Escribe un programa que pida dos números y escriba en la pantalla cuál es el mayor.</h3>
+                    <p id="greater-number-result"></p>
+                    <script src="js/greaterNumber.js"></script>
+                </li>
+                <li>
+                    <h3>3. Escribe un programa que pida una frase (mínimo de dos líneas) y de forma organizada escriba las vocales (a, e, i, o, u) que aparecen.</h3>
+                    <textarea id="vowels-input" rows="4" cols="50"></textarea>
+                    <button onclick="showVowels()">Mostrar Vocales</button>
+                    <p id="vowels-result"></p>
+                    <script src="js/vowels.js"></script>
+                </li>
+            </ol>
+        </section>
+
+        <!-- Contenido de Ajax -->
+        <section id="ajax">
+            <h2>Ajax</h2>
+            <label for="url-input">URL:</label>
+            <input type="text" id="url-input" value="index.html">
+            <button onclick="showContent()">Mostrar Contenidos</button>
+        
+            <div id="status">Estados de la petición: </div>
+        
+            <div id="http-headers">
+                <h3>Cabeceras HTTP de la respuesta del servidor:</h3>
+                <ul id="headers-list"></ul>
+            </div>
+        
+            <div id="status-code">
+                <h3>Código de estado:</h3>
+                <p id="status-text"></p>
+                <p id="status-code-text"></p>
+            </div>
+        
+            <div id="content">
+                <h3>Contenidos:</h3>
+                <pre id="content-text"></pre>
+            </div>
+        </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2023 </p>
+    </footer>
+
+    <script src="js/ajax.js"></script>
+
+</body>
+</html>
